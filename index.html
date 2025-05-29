@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>.cloths - Orders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2 class="logo">.cloths</h2>
+      <ul>
+        <li>Dashboard</li>
+        <li>Upload Products</li>
+        <li class="active">Orders</li>
+        <li>Delivery Tracking</li>
+        <li>Stocks</li>
+        <li>Expense</li>
+        <li>Reviews & Ratings</li>
+        <li>Advertisement</li>
+      </ul>
+      <div class="logout">🔓 Log Out</div>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <input type="text" class="search-bar" placeholder="Search....."/>
+        <div class="notification">🔔</div>
+        <div class="profile">
+          <img src="https://via.placeholder.com/40" class="avatar" alt="User"/>
+          <div>
+            <span>Joseph</span><br/>
+            <small>Admin</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="orders-section">
+        <div class="orders-header">
+          <h3>Orders</h3>
+          <div class="filters">
+            <button>🔽 Filters</button>
+            <select>
+              <option>Category: All</option>
+              <option>Men</option>
+              <option>Women</option>
+              <option>Kids</option>
+            </select>
+            <select>
+              <option>Product: All</option>
+              <option>Shirt</option>
+              <option>T-Shirt</option>
+              <option>Saree</option>
+            </select>
+            <input type="date" value="2023-12-07" />
+            <input type="text" class="table-search" placeholder="Search...."/>
+          </div>
+        </div>
+
+        <table class="orders-table">
+          <thead>
+            <tr>
+              <th>Sl. no.</th>
+              <th>Date</th>
+              <th>Name</th>
+              <th>Location</th>
+              <th>Contact Number</th>
+              <th>Category</th>
+              <th>Sub Category</th>
+              <th>Products</th>
+              <th>Qut.</th>
+              <th>Price</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>01</td><td>07/12/2023</td><td><a href="https://sathishk2003.github.io/customer/">Ramesh</a></td><td>Coimbatore</td><td>99999 88888</td><td>Men</td><td>T-Shirt</td><td>Printed</td><td>1</td><td>Rs. 100</td><td>....</td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td>Men</td><td>Shirt</td><td>Formal Shirt</td><td>1</td><td>Rs. 100</td><td></td></tr>
+            <tr class="total-row"><td colspan="9"></td><td colspan="2"><strong>Total Price: Rs. 200</strong></td></tr>
+            <tr><td>02</td><td>07/12/2023</td><td>Gokul</td><td>Madurai</td><td>99999 88888</td><td>Women</td><td>Saree</td><td>Cotton Saree</td><td>2</td><td>Rs. 200</td><td>....</td></tr>
+            <tr><td>03</td><td>07/12/2023</td><td>Ajith</td><td>Chennai</td><td>99999 88888</td><td>Men</td><td>Shirt</td><td>Casual Shirt</td><td>1</td><td>Rs. 150</td><td>....</td></tr>
+            <tr><td>04</td><td>07/12/2023</td><td>Ajin</td><td>Teni</td><td>99999 88888</td><td>Kids</td><td>Shorts</td><td>Shorts</td><td>4</td><td>Rs. 400</td><td>....</td></tr>
+            <tr><td>05</td><td>07/12/2023</td><td>Sherin</td><td>Nagercoil</td><td>99999 88888</td><td>Men</td><td>Shorts</td><td>Sports Shorts</td><td>3</td><td>Rs. 300</td><td><span class="status dispatched">Dispatched</span></td></tr>
+            <tr><td>06</td><td>07/12/2023</td><td>Abish</td><td>Thenkasi</td><td>99999 88888</td><td>Women</td><td>Saree</td><td>Cotton Saree</td><td>2</td><td>Rs. 200</td><td><span class="status dispatched">Dispatched</span></td></tr>
+            <tr><td>07</td><td>07/12/2023</td><td>Akash</td><td>Tirupur</td><td>99999 88888</td><td>Men</td><td>Vest</td><td>Vest</td><td>1</td><td>Rs. 100</td><td><span class="status dispatched">Dispatched</span></td></tr>
+            <tr><td>08</td><td>07/12/2023</td><td>Naveen</td><td>Erode</td><td>99999 88888</td><td>Women</td><td>Kurthi</td><td>V Neck</td><td>1</td><td>Rs. 100</td><td><span class="status cancelled">Cancelled</span></td></tr>
+            <tr><td>09</td><td>07/12/2023</td><td>Mani</td><td>Chennai</td><td>99999 88888</td><td>Men</td><td>Pant</td><td>Slim fit</td><td>1</td><td>Rs. 100</td><td><span class="status dispatched">Dispatched</span></td></tr>
+            <tr><td>10</td><td>07/12/2023</td><td>Suresh</td><td>Madurai</td><td>99999 88888</td><td>Men</td><td>Shirt</td><td>Casual</td><td>1</td><td>Rs. 100</td><td><span class="status dispatched">Dispatched</span></td></tr>
+            <tr><td>11</td><td>07/12/2023</td><td>Abishek</td><td>Coimbatore</td><td>99999 88888</td><td>Men</td><td>Shirt</td><td>Formal</td><td>1</td><td>Rs. 100</td><td><span class="status dispatched">Dispatched</span></td></tr>
+            <tr><td>12</td><td>07/12/2023</td><td>Abi</td><td>Nagercoil</td><td>99999 88888</td><td>Kids</td><td>Shorts</td><td>Shorts</td><td>2</td><td>Rs. 200</td><td><span class="status dispatched">Dispatched</span></td></tr>
+            <tr><td>13</td><td>07/12/2023</td><td>Vijay</td><td>Selam</td><td>99999 88888</td><td>Kids</td><td>T-Shirts</td><td>Round neck</td><td>3</td><td>Rs. 100</td><td><span class="status cancelled">Cancelled</span></td></tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <button>◀</button>
+          <button class="active">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <span>...</span>
+          <button>▶</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
